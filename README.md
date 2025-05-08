@@ -17,7 +17,7 @@ git clone https://github.com/claudiogferraz/.dotfiles ~/.dotfiles
 ```
 
 
-### Step 2 - Install packages
+### Step 2 - Install packages and dependencies
 
 We need to ensure that everything is installed before linking the configuration files.
 
@@ -33,15 +33,31 @@ The following packages will be installed at this step:
 First we Install all the software pre-packaged by your distro:
 
 ```bash
+# Install Git, Curl, ZSH, Podman and Compose
 sudo dnf install git curl zsh podman podman-compose 
 ```
 
 Then we manually install packages that aren't pre-packaged by the distro, running their respective installation commands:
 
 ```bash
+# Install Oh My Zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 ```
 
 ```bash
+# Install mise
 curl https://mise.run | sh
 ```
+
+## Step 3 - Linking the files
+
+```bash
+# Link Git config
+ln -s ~/.dotfiles/.gitconfig ~/.gitconfig
+
+# Link ZSH config
+ln -s ~/.dotfiles/.zshrc ~/.zshrc
+```
+
