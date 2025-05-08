@@ -72,7 +72,7 @@ ZSH_THEME="gentoo"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
 	git
-	asdf
+	mise
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -105,3 +105,5 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+eval "$(~/.local/bin/mise activate zsh)"

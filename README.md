@@ -27,7 +27,7 @@ The following packages will be installed at this step:
 - Curl -  Tool for transferring data using various network protocols
 - ZSH - Extensible shell with lots of improvements over bash
 - Oh My Zsh - Framework for managing your ZSH, with lots of pre-bundled plugins, themes, etc.
-- Asdf - One tool for managing all your runtime versions
+- Mise - One tool for managing all your runtime versions
 - Podman & Compose - Daemonless container management tool
 
 First we Install all the software pre-packaged by your distro:
@@ -43,5 +43,5 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 ```
 
 ```bash
-
+curl https://mise.run | sh
 ```
