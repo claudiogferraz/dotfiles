@@ -8,7 +8,15 @@ I use this on my home-server, workstation, and laptop.
 
 The following instructions will help you set-up your environment from installing the required packages to correctly applying their saved configuration.
 
-### Step 1 - Clone the repo
+### Step 1 - Install dependencies
+
+Install **Git** and **Curl**, which are required to run most of the other commands you'll see on this guide. To do so, run
+
+```bash
+sudo dnf install git curl
+```
+
+### Step 2 - Clone the repo
 
 Run the command to clone the repo and download the files to your machine
 
@@ -17,14 +25,12 @@ git clone https://github.com/claudiogferraz/.dotfiles ~/.dotfiles
 ```
 
 
-### Step 2 - Install packages and dependencies
+### Step 3 - Install packages and dependencies
 
 We need to ensure that everything is installed before linking the configuration files.
 
 The following packages will be installed at this step:
 
-- Git - Distributed version control system
-- Curl -  Tool for transferring data using various network protocols
 - ZSH - Extensible shell with lots of improvements over bash
 - Oh My Zsh - Framework for managing your ZSH, with lots of pre-bundled plugins, themes, etc.
 - Mise - One tool for managing all your runtime versions
@@ -33,8 +39,8 @@ The following packages will be installed at this step:
 First we Install all the software pre-packaged by your distro:
 
 ```bash
-# Install Git, Curl, ZSH, Podman and Compose
-sudo dnf install git curl zsh podman podman-compose 
+# Install ZSH, Neovim, Podman and Compose
+sudo dnf install zsh nvim podman podman-compose
 ```
 
 Then we manually install packages that aren't pre-packaged by the distro, running their respective installation commands:
@@ -57,9 +63,9 @@ curl https://mise.run | sh
 
 ```bash
 # Link Git config
-ln -s ~/.dotfiles/.gitconfig ~/.gitconfig
+ln -sf ~/.dotfiles/.gitconfig ~/.gitconfig
 
 # Link ZSH config
-ln -s ~/.dotfiles/.zshrc ~/.zshrc
+ln -sf ~/.dotfiles/.zshrc ~/.zshrc
 ```
 
