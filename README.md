@@ -24,7 +24,6 @@ Run the command to clone the repo and download the files to your machine
 git clone https://github.com/claudiogferraz/.dotfiles ~/.dotfiles
 ```
 
-
 ### Step 3 - Install packages and dependencies
 
 We need to ensure that everything is installed before linking the configuration files.
