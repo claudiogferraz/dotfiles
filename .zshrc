@@ -72,8 +72,8 @@ ZSH_THEME="gentoo"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
 	zsh-autosuggestions
-  zsh-syntax-highlighting
-  git
+	zsh-syntax-highlighting
+	git
 	mise
 )
 
