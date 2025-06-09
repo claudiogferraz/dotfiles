@@ -108,5 +108,4 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-eval "$(~/.local/bin/mise activate zsh)"
-
+eval "$(mise activate zsh)"

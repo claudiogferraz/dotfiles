@@ -1,6 +1,6 @@
 # My Dotfiles
 
-This configurations and instructions are made specifically for quickly setting up my preferred environment on machines running Fedora and RHEL-based distros. 
+This configurations and instructions are made specifically for quickly setting up my preferred environment on machines running Fedora and RHEL-based distros.
 
 I use this on my home-server, workstation, and laptop.
 
@@ -47,15 +47,21 @@ Then we manually install packages that aren't pre-packaged by the distro, runnin
 ```bash
 # Install Oh My Zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+```
 
+```bash
 # Download ZSH Autosuggestions plugin
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+```
 
+```bash
 # Download ZSH Syntax Highlighting plugn
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+```
 
-# Install mise
-curl https://mise.run | sh
+```bash
+# Install mise, now packaged by Fedora
+sudo dnf install mise
 ```
 
 ## Step 3 - Linking the files
@@ -63,8 +69,9 @@ curl https://mise.run | sh
 ```bash
 # Link Git config
 ln -sf ~/.dotfiles/.gitconfig ~/.gitconfig
+```
 
+```bash
 # Link ZSH config
 ln -sf ~/.dotfiles/.zshrc ~/.zshrc
 ```
-
