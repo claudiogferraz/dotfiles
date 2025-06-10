@@ -60,8 +60,10 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 ```
 
 ```bash
-# Install mise, now packaged by Fedora
-sudo dnf install mise
+# Run Mise installation script
+sudo dnf install -y dnf-plugins-core
+sudo dnf config-manager addrepo --from-repofile=https://mise.jdx.dev/rpm/mise.repo
+sudo dnf install -y mise
 ```
 
 ## Step 3 - Linking the files
