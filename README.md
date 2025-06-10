@@ -75,3 +75,8 @@ ln -sf ~/.dotfiles/.gitconfig ~/.gitconfig
 # Link ZSH config
 ln -sf ~/.dotfiles/.zshrc ~/.zshrc
 ```
+
+```bash
+# Link Neovim config
+ln -sf ~/.dotfiles/.config/nvim ~/.config
+```
