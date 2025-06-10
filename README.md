@@ -66,7 +66,7 @@ sudo dnf config-manager addrepo --from-repofile=https://mise.jdx.dev/rpm/mise.re
 sudo dnf install -y mise
 ```
 
-## Step 3 - Linking the files
+### Step 4 - Create symbolic links
 
 ```bash
 # Link Git config
