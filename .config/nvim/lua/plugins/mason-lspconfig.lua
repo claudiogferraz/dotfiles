@@ -4,17 +4,10 @@ return {
     opts = {},
     dependencies = {
       { "mason-org/mason.nvim", opts = {} },
-      { "neovim/nvim-lspconfig", opts = {
-        require('lspconfig').lua_ls.setup {
-          settings = {
-            Lua = {
-              diagnostics = {
-                globals = { 'vim' }
-              }
-            }
-          }
-        }}
-      }
-    }
+      { "neovim/nvim-lspconfig", opts = {} },
+    },
+    config = function()
+      require("config.lsp")
+    end,
   }
 }

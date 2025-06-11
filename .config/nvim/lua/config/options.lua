@@ -6,5 +6,9 @@ vim.opt.expandtab = true
 vim.opt.smartindent = true
 vim.opt.autoindent = true
 
+-- Line numbers
 vim.opt.number = true
 vim.opt.relativenumber = true
+
+-- Column rulers
+vim.opt.colorcolumn = "80,120"
