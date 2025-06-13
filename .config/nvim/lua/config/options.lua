@@ -11,4 +11,4 @@ vim.opt.number = true
 vim.opt.relativenumber = true
 
 -- Column rulers
-vim.opt.colorcolumn = "80,120"
+vim.opt.colorcolumn = "120"

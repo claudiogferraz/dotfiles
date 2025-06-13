@@ -35,3 +35,6 @@ require("lazy").setup({
 })
 
 vim.cmd("colorscheme carbonfox")
+
+require("config.keymaps")
+require("config.options")

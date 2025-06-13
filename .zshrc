@@ -75,6 +75,7 @@ plugins=(
 	zsh-syntax-highlighting
 	git
 	mise
+  ssh-agent
 )
 
 source $ZSH/oh-my-zsh.sh
