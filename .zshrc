@@ -111,6 +111,8 @@ source $ZSH/oh-my-zsh.sh
 
 eval "$(mise activate zsh)"
 
+bindkey -v
+
 # pnpm
 export PNPM_HOME="/home/claudio/.local/share/pnpm"
 case ":$PATH:" in
