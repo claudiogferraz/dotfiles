@@ -111,7 +111,8 @@ source $ZSH/oh-my-zsh.sh
 
 eval "$(mise activate zsh)"
 
-bindkey -v
+# Enable vi mode on zsh (it sucks so I disabled it again)
+# bindkey -v
 
 # pnpm
 export PNPM_HOME="/home/claudio/.local/share/pnpm"
