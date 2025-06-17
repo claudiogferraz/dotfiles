@@ -34,7 +34,5 @@ require("lazy").setup({
   checker = { enabled = true },
 })
 
-vim.cmd("colorscheme ayu")
-
 require("config.keymaps")
 require("config.options")
