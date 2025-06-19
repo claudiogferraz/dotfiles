@@ -26,10 +26,10 @@ vim.keymap.set("n", "<leader>f", "", { desc = "File options" })
 vim.keymap.set("n", "<leader>fe", ":NvimTreeToggle<CR>", { desc = "Toggle file explorer (NvimTree)" })
 vim.keymap.set("n", "<leader>fm", ":lua require(\"conform\").format({ async = true, lsp_format = \"fallback\" })<CR>",
   { desc = "Format file/buffer (Conform)" })
-vim.keymap.set('n', '<leader>ff', ":Telescope find_files<CR>", { desc = 'Find files (Telescope)' })
-vim.keymap.set('n', '<leader>fg', ":Telescope live_grep<CR>", { desc = 'Live grep (Telescope)' })
-vim.keymap.set('n', '<leader>fb', ":Telescope buffers<CR>", { desc = 'Find buffers (Telescope)' })
-vim.keymap.set('n', '<leader>fh', ":Telescope help_tags<CR>", { desc = 'Help tags (Telescope)' })
+vim.keymap.set("n", "<leader>ff", ":Telescope find_files<CR>", { desc = "Find files (Telescope)" })
+vim.keymap.set("n", "<leader>fg", ":Telescope live_grep<CR>", { desc = "Live grep (Telescope)" })
+vim.keymap.set("n", "<leader>fb", ":Telescope buffers<CR>", { desc = "Find buffers (Telescope)" })
+vim.keymap.set("n", "<leader>fh", ":Telescope help_tags<CR>", { desc = "Help tags (Telescope)" })
 
 -- Code related keymaps
 vim.keymap.set("n", "<leader>c", "", { desc = "+Code options" })

@@ -1,4 +1,5 @@
 vim.cmd("colorscheme carbonfox")
+vim.opt.termguicolors = true
 vim.opt.cursorline = true
 vim.opt.showmode = false
 vim.opt.cmdheight = 0

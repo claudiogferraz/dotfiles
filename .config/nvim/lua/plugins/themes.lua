@@ -3,6 +3,11 @@ return {
     "Mofiqul/adwaita.nvim",
     lazy = false,
     priority = 1000,
+    config = function()
+      vim.g.adwaita_darker = true              -- for darker version
+      vim.g.adwaita_disable_cursorline = false -- to disable cursorline
+      vim.g.adwaita_transparent = false        -- makes the background transparent
+    end
   },
   {
     "EdenEast/nightfox.nvim",
